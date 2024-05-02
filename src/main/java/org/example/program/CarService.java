@@ -16,10 +16,11 @@ public class CarService {
 //    }
 
     public List<CarResponse> getAllCars() {
-        List<Car> cars = carRepository.findAll();
-        return cars.stream()
-                .map(mapStructCar::mapToCarResponse)
-                .collect(Collectors.toList());
+        throw new CarNotFoundException("XYZ");
+
+//        return carRepository.findAll().stream()
+//                .map(mapStructCar::mapToCarResponse)
+//                .collect(Collectors.toList());
     }
     public CarResponse createCar(CarCreateRequest request) {
         Car car = mapStructCar.toEntity(request);
