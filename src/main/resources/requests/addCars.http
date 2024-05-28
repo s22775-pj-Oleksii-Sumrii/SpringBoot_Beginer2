@@ -1,0 +1,18 @@
+POST http://localhost:8080/api/cars
+Content-Type: application/json
+
+{
+  "name": "Ford",
+  "surname": "Mustang"
+}
+
+###
+
+
+POST http://localhost:8080/api/cars
+Content-Type: application/json
+
+{
+  "brand": "Ford",
+  "model": "Focus"
+}

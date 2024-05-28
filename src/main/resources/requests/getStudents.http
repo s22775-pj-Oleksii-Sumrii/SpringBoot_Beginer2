@@ -1,0 +1,6 @@
+GET http://localhost:8080/api/cars
+Authorization: Basic Alex Alex
+
+Accept: application/json
+
+###
